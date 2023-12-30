@@ -30,7 +30,7 @@ data$DATE <- as.Date(as.character(data$DATE), format = "%Y%m")
 model <- lm( RET ~ Mkt_RF + SMB + HML, data = data)
 summary(model)
 
-#Fama French 3-faktormodell
+#CAPM
 data <- read_excel(#Data som innehåller avkastningsdata)
 colnames(data) <- c("DATE", "Mkt_RF", "RET")
 data$DATE <- as.Date(as.character(data$DATE), format = "%Y%m")
